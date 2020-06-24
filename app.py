@@ -22,7 +22,7 @@ def home():
            <body> 
            <h1>Heart Disease Prediction<h1>
            </body>"""
-
+"""
 @app.route("/predict", methods=["GET"])
 def predict():
     thal = flask.request.args["thal"]
@@ -53,6 +53,7 @@ def predict():
     prob = heart.predict_proba(X_new)
     
     return "This patient is diagnosed as " + outcome + " with probability " + str(round(prob[0][1], 2))
+"""
 
 @app.route("/page")
 def page():
